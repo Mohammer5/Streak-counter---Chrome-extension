@@ -1,0 +1,37 @@
+@import "../../styleguide/colors.scss";
+
+.streakItem {
+  margin: 0;
+  display: table;
+  background: $colors-yellow500;
+  color: $colors-grey900;
+  width: 100%;
+  padding: 4px;
+}
+
+.streakItem:nth-child(2n) {
+  background: $colors-yellow200;
+}
+
+
+.name,
+.startDate,
+.days {
+  display: table-row;
+}
+
+.label,
+.value {
+  display: table-cell;
+  padding: 4px;
+}
+
+.label {
+  width: 1px;
+  white-space: nowrap;
+}
+
+.actions {
+  margin: 0;
+  padding: 4px;
+}

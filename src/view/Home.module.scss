@@ -1,0 +1,15 @@
+@import "../styleguide/colors";
+
+.home {
+  color: $colors-grey000;
+  width: 500px;
+  min-height: 100%;
+}
+
+.section {
+  padding: 16px;
+}
+
+.actions {
+  margin-bottom: 16px;
+}
