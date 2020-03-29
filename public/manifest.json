@@ -1,9 +1,9 @@
 {
   "manifest_version": 2,
-  "version": "0.0.1",
-  "short_name": "React App",
-  "name": "Create React App Sample",
-  "description": "Sample application showing how to create an extension with Create React App",
+  "version": "0.1.0",
+  "short_name": "Streak Counter",
+  "name": "Streak Counter",
+  "description": "Count & complete streaks",
   "browser_action": {
     "default_title": "CRE",
     "default_popup": "popup.html"
@@ -17,9 +17,6 @@
       "js": ["contentScript.bundle.js"]
     }
   ],
-  "chrome_url_overrides": {
-    "newtab": "popup.html"
-  },
   "icons": {
     "16": "img/icon-16.png",
     "48": "img/icon-48.png",
