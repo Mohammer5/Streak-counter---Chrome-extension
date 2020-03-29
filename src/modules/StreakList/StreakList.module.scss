@@ -1,0 +1,47 @@
+@import "../../styleguide/colors";
+
+.noStreaksMessage {
+  font-size: 16px;
+  margin: 0;
+}
+
+.streakItem {
+  margin-bottom: 8px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.sortingContainer {
+  display: flex;
+  margin-bottom: 8px;
+}
+
+.sorting, .direction {
+  width: calc(50% - 4px);
+}
+
+.sorting {
+  margin-right: 8px;
+}
+
+.addLink {
+  background: none;
+  line-height: inherit;
+  border: 0;
+  padding: 0;
+  font-family: inherit;
+  text-decoration: underline;
+  cursor: pointer;
+  color: $theme-color-1;
+  font-size: 1em;
+
+  &:hover {
+    color: hover-color($theme-color-1);
+  }
+}
+
+.sortingContainer :global(.root-input):last-child {
+  margin: 0;
+}

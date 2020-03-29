@@ -1,0 +1,13 @@
+.icon {
+  background: $theme-color-1;
+  height: 32px;
+  width: 32px;
+
+  .addButton:hover & {
+    background: hover-color($theme-color-1);
+  }
+}
+
+.figure {
+  fill: $theme-color-2;
+}

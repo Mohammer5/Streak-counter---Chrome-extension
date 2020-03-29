@@ -1,71 +1,20 @@
 @function hover-color($color) {
-  @return lighten($color, 5%);
+  @return darken($color, 5%);
 }
 
-$theme-color-1: #ffd02e;
-$theme-color-2: #1ed278;
-$theme-color-3: #ff0051;
-$theme-color-4: #4a90e2;
-$theme-color-5: #000000;
-$theme-color-6: #ffffff;
+$color-blue: #00ACE2;
+$color-white: white;
+$color-grey: #f2f2f2;
+$color-black: black;
 
-$colors-yellow-base: #ffd02e;
-$colors-yellow900: darken($colors-yellow-base, 20%);
-$colors-yellow800: darken($colors-yellow-base, 15%);
-$colors-yellow700: darken($colors-yellow-base, 10%);
-$colors-yellow600: darken($colors-yellow-base, 5%);
-$colors-yellow500: $colors-yellow-base;
-$colors-yellow400: lighten($colors-yellow-base, 5%);
-$colors-yellow300: lighten($colors-yellow-base, 10%);
-$colors-yellow200: lighten($colors-yellow-base, 15%);
-$colors-yellow100: lighten($colors-yellow-base, 20%);
-$colors-yellow050: lighten($colors-yellow-base, 25%);
+$theme-color-1: $color-blue;
+$theme-color-2: $color-white;
+$theme-color-3: $color-grey;
+$theme-color-4: $color-black;
 
-$colors-blue-base: #4a90e2;
-$colors-blue900: darken($colors-blue-base, 40%);
-$colors-blue800: darken($colors-blue-base, 30%);
-$colors-blue700: darken($colors-blue-base, 20%);
-$colors-blue600: darken($colors-blue-base, 10%);
-$colors-blue500: $colors-blue-base;
-$colors-blue400: lighten($colors-blue-base, 10%);
-$colors-blue300: lighten($colors-blue-base, 20%);
-$colors-blue200: lighten($colors-blue-base, 30%);
-$colors-blue100: lighten($colors-blue-base, 40%);
-$colors-blue050: lighten($colors-blue-base, 50%);
-
-$colors-red-base: #ff0051;
-$colors-red900: darken($colors-red-base, 40%);
-$colors-red800: darken($colors-red-base, 30%);
-$colors-red700: darken($colors-red-base, 20%);
-$colors-red600: darken($colors-red-base, 10%);
-$colors-red500: $colors-red-base;
-$colors-red400: lighten($colors-red-base, 10%);
-$colors-red300: lighten($colors-red-base, 20%);
-$colors-red200: lighten($colors-red-base, 30%);
-$colors-red100: lighten($colors-red-base, 40%);
-$colors-red050: lighten($colors-red-base, 50%);
-
-$colors-green-base: #1ed278;
-$colors-green900: darken($colors-green-base, 40%);
-$colors-green800: darken($colors-green-base, 30%);
-$colors-green700: darken($colors-green-base, 20%);
-$colors-green600: darken($colors-green-base, 10%);
-$colors-green500: $colors-green-base;
-$colors-green400: lighten($colors-green-base, 10%);
-$colors-green300: lighten($colors-green-base, 20%);
-$colors-green200: lighten($colors-green-base, 30%);
-$colors-green100: lighten($colors-green-base, 40%);
-$colors-green050: lighten($colors-green-base, 50%);
-
-$colors-grey1000: #000000;
-$colors-grey900: #212934;
-$colors-grey800: #404b5a;
-$colors-grey700: #4a5768;
-$colors-grey600: #6e7a8a;
-$colors-grey500: #a0adba;
-$colors-grey400: #d5dde5;
-$colors-grey300: #e8edf2;
-$colors-grey200: #f3f5f7;
-$colors-grey100: #f8f9fa;
-$colors-grey050: #fbfcfd;
-$colors-grey000: #ffffff;
+//$color-yellow: #ffd02e;
+// $theme-color-2: #1ed278;
+// $theme-color-3: #ff0051;
+// $theme-color-4: #4a90e2;
+// $theme-color-5: #000000;
+// $theme-color-6: #ffffff;

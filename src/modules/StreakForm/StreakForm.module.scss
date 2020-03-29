@@ -1,0 +1,19 @@
+.actions {
+  display: flex;
+}
+
+.action {
+  margin-right: 4px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.dateInput {
+  height: 40px;
+  border: 1px solid rgb(160, 173, 186);
+  width: 100%;
+  font-size: 14px;
+  padding: 0 11px;
+}

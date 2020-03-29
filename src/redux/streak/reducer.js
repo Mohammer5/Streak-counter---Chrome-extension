@@ -1,5 +1,6 @@
 import {
   ADD_STREAK,
+  COMPLETE_STREAK,
   REMOVE_STREAK,
   SET_STREAKS,
   UPDATE_STREAK
@@ -25,8 +26,15 @@ export const streakReducer = (
 
   if (type === UPDATE_STREAK)
     return state.map(curStreak => 
-      curStreak === streak.id
+      curStreak.id === streak.id
         ? { ...curStreak, ...streak }
+        : curStreak
+    )
+
+  if (type === COMPLETE_STREAK)
+    return state.map(curStreak => 
+      curStreak.id === id
+        ? { ...curStreak, completed: true }
         : curStreak
     )
 

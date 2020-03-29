@@ -1,0 +1,13 @@
+@import "../../styleguide/colors";
+
+.icon {
+  background: $theme-color-1;
+
+  .addButton:hover & {
+    background: hover-color($theme-color-1);
+  }
+}
+
+.figure {
+  fill: $theme-color-2;
+}

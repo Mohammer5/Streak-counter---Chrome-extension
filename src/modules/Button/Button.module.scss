@@ -1,0 +1,56 @@
+@import "../../styleguide/colors";
+
+.button {
+  display: inline-flex;
+  height: 34px;
+  line-height: 32px;
+  cursor: pointer;
+  margin: 0;
+  position: relative;
+  background: none;
+  border: 0;
+  padding: 0;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.label {
+  display: inline-block;
+  padding: 0 8px;
+}
+
+.primary {
+  border: 1px solid $theme-color-1;
+
+  .label {
+    background: $theme-color-1;
+    color: $theme-color-2;
+  }
+}
+
+.secondary {
+  border: 1px solid $theme-color-1;
+
+  .label {
+    background: $theme-color-2;
+    color: $theme-color-1;
+  }
+}
+
+.primary, .secondary {
+  &:hover {
+    border-color: hover-color($theme-color-1);
+  }
+
+  &:hover .label {
+    background: hover-color($theme-color-1);
+    color: $theme-color-2;
+  }
+}

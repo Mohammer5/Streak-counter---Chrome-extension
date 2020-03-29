@@ -2,7 +2,11 @@ export const ADD_STREAK = 'ADD_STREAK'
 export const addStreak = streak => ({
   type: ADD_STREAK,
   payload: {
-    streak: { id: Date.now(), ...streak }
+    streak: {
+      id: Date.now(),
+      completed: false,
+      ...streak,
+    }
   },
 })
 
@@ -22,4 +26,10 @@ export const UPDATE_STREAK = 'UPDATE_STREAK'
 export const updateStreak = streak => ({
   type: UPDATE_STREAK,
   payload: { streak },
+})
+
+export const COMPLETE_STREAK = 'COMPLETE_STREAK'
+export const completeStreak = id => ({
+  type: COMPLETE_STREAK,
+  payload: { id },
 })

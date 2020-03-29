@@ -1,15 +1,56 @@
 @import "../styleguide/colors";
 
 .home {
-  color: $colors-grey000;
-  width: 500px;
+  width: 336px;
   min-height: 100%;
+  padding: 8px;
+  background: $theme-color-3;
 }
 
-.section {
-  padding: 16px;
+.divider {
+  height: 2;
+  border-top: 2px solid black;
+  margin: 16px 0;
 }
 
-.actions {
-  margin-bottom: 16px;
+.addNewButton,
+.title {
+  margin-bottom: 8px;
+}
+
+.content {
+  width: 100%;
+  overflow: hidden;
+}
+
+.contentWrapper {
+  display: flex;
+  transform: translateX(0);
+  transition: transform 0.05s ease-out;
+}
+
+.showForm .contentWrapper {
+  transform: translateX(-328px);
+}
+
+.addForm,
+.editForm,
+.overview {
+  flex-shrink: 0;
+  width: 320px;
+}
+
+.editForm,
+.overview {
+  margin-right: 8px;
+}
+
+.streakList {
+  max-height: 304px;
+  overflow: auto;
+  margin-bottom: 8px;
+}
+
+.showCompleted {
+  margin-bottom: 8px;
 }

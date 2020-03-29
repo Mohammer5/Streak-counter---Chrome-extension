@@ -17,6 +17,9 @@
       "js": ["contentScript.bundle.js"]
     }
   ],
+  "chrome_url_overrides": {
+    "newtab": "popup.html"
+  },
   "icons": {
     "16": "img/icon-16.png",
     "48": "img/icon-48.png",

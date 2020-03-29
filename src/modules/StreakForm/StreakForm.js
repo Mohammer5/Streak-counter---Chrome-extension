@@ -1,9 +1,15 @@
-import { Button, Field as CoreField, Label, Help } from '@dhis2/ui-core'
+import { Field as CoreField, Label, Help } from '@dhis2/ui-core'
 import { Form, Field, Input } from '@dhis2/ui-forms'
 import { format } from 'date-fns';
 import React from 'react'
 
-export const StreakForm = ({ initialValues, onSubmit }) => {
+import { Button } from '../Button/Button';
+import styles from './StreakForm.module.scss'
+
+/**
+ * @TODO "initialFocus" on text input
+ */
+export const StreakForm = ({ editMode, initialValues, onSubmit, onCancel }) => {
   return (
     <Form initialValues={initialValues} onSubmit={onSubmit}>
       {({ handleSubmit, values }) => (
@@ -25,7 +31,7 @@ export const StreakForm = ({ initialValues, onSubmit }) => {
               <CoreField>
                 <Label>Start date</Label>
 
-                <input {...input} />
+                <input className={styles.dateInput} {...input} />
 
                 {meta.error && meta.touched && (
                   <Help error>{meta.error}</Help>
@@ -34,7 +40,16 @@ export const StreakForm = ({ initialValues, onSubmit }) => {
             )}
           </Field>
 
-          <Button primary type="submit">Add streak counter</Button>
+          <div className={styles.actions}>
+            <Button className={styles.action} primary type="submit">
+              {
+                editMode
+                  ? 'Save changes'
+                  : 'Add streak counter'
+              }
+            </Button>
+            <Button className={styles.action} onClick={onCancel}>Cancel</Button>
+          </div>
         </form>
       )}
     </Form>

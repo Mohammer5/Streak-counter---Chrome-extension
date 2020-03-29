@@ -1,0 +1,18 @@
+$gutter: 8px;
+$transition-time: 0.2s;
+$transition-easing: ease-out;
+
+.container {
+  height: 32px;
+  overflow: hidden;
+  display: flex;
+}
+
+.title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  flex-grow: 1;
+  font-size: 24px;
+  line-height: 32px;
+  height: 32px;
+}

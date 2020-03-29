@@ -1,0 +1,59 @@
+@import "../../styleguide/colors.scss";
+
+.streakItem {
+  margin: 0;
+  display: flex;
+  background: $theme-color-1;
+  color: $theme-color-2;
+  width: 100%;
+  padding: 8px;
+  justify-content: flex-start;
+  cursor: pointer;
+
+  &:hover {
+    background: hover-color($theme-color-1);
+  }
+}
+
+.streakData {
+  flex-grow: 1;
+  margin-right: 8px;
+}
+
+.name {
+  line-height: 24px;
+  font-size: 20px;
+  height: 24px;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.startDate,
+.days {
+  display: block;
+  font-size: 12px;
+  line-height: 16px;
+  height: 16px;
+}
+
+.label {
+  font-weight: bold;
+}
+
+.actions {
+  display: flex;
+  flex-grow: 0;
+  width: 88px;
+  margin: 0;
+
+  .completed & {
+    width: 56px;
+  }
+}
+
+.action {
+  margin-right: 8px;
+
+  &:last-child
+    { margin-right: 0; }
+}
